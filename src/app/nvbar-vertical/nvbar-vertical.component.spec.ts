@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestComponent } from './test.component';
+import { NvbarVerticalComponent } from './nvbar-vertical.component';
 
-describe('TestComponent', () => {
-  let component: TestComponent;
-  let fixture: ComponentFixture<TestComponent>;
+describe('NvbarVerticalComponent', () => {
+  let component: NvbarVerticalComponent;
+  let fixture: ComponentFixture<NvbarVerticalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TestComponent ]
+      declarations: [ NvbarVerticalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TestComponent);
+    fixture = TestBed.createComponent(NvbarVerticalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

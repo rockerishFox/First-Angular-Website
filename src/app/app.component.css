@@ -1,0 +1,28 @@
+
+.body-row{
+    width: 100%;
+    height: 30%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+}
+
+.body-row-component{
+    display: inline;
+}
+
+.body-row-blue{
+    background-color: whitesmoke;
+    width: 70%; 
+}
+
+.body-row-logo{
+    width: 30%;
+    height: 100%;
+    background-image: url("src/assets/photo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
