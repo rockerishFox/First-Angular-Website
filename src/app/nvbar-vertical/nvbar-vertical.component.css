@@ -1,0 +1,182 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+.navbar {
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  left: 0px;
+  transition: 0.8s ease;
+}
+
+.navbar > ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  background-color: #000000;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-item > a {
+  font-family: 'Montserrat';
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  flex: 1;
+}
+
+
+.nav-item-logo {
+  display: flex;
+}
+
+.nav-item-logo > a {
+  flex: 1;
+  color: white;
+  text-align: center;
+  padding: 25px 0px;
+  text-decoration: none;
+  font-family: 'Lato';
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Toggle Button */
+
+.toggle-collapse {
+  float: left;
+  margin-left: 210px;
+  margin-top: 10px;
+  border: 0px;
+  background: transparent;
+  content: "";
+  outline: inherit;
+  position: fixed;
+}
+
+.toggle-icon,
+.toggle-icon::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: fixed;
+  background-color: black;
+  border-radius: 2em;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.8s ease;
+  margin-top: 0.8em;
+}
+
+.toggle-icon::after {
+  position: absolute;
+  left: 0px;
+  margin-top: 0.45em;
+}
+/* Animations */
+
+@-webkit-keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn:hover {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
